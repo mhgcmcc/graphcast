@@ -17,14 +17,12 @@ The Predictor which is wrapped sees normalized inputs and targets, and makes
 normalized predictions. The wrapper handles translating the predictions back
 to the original domain.
 """
-
 import logging
 from typing import Optional, Tuple
 
 from graphcast import predictor_base
 from graphcast import xarray_tree
 import xarray
-
 
 def normalize(values: xarray.Dataset,
               scales: xarray.Dataset,
